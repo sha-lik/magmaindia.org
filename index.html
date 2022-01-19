@@ -7,6 +7,7 @@
   <meta content="" name="keywords">
   <meta content="" name="description">
 
+
   <!-- Favicons -->
   <link href="img/favicon_magma.png" rel="icon">
   <link href="img/magma.png" rel="magma-icon">
@@ -27,6 +28,155 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
+<style>
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #e6ebe4;
+  --color-2: #e6ebe4;
+  --color-3: #e6ebe4 ;
+}
+
+.title-word-2 {
+  --color-1: #e6ebe4;
+  --color-2: #e6ebe4;
+  --color-3: #e6ebe4;
+}
+
+.title-word-3 {
+  --color-1: #338a10;
+  --color-2: #df6e12;
+  --color-3: #e6ebe4;
+}
+
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+/* Here are just some visual styles. 🖌 */
+
+
+.text {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 900;
+  margin: 0;
+  line-height: 1;
+  color: black;
+}
+
+
+
+
+.container2 {
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  animation: changeBackgroundImage 13s infinite;
+
+
+}
+
+@keyframes changeBackgroundImage {
+  0% {
+    background-image: url('img/head.jpg');
+  }
+
+  30% {
+    background-image: url('img/head2.jpg');
+  }
+ 
+  60% {
+    background-image: url('img/head3.jpg');
+  }
+
+  100% {
+    background-image: url('img/head.jpg');
+  }
+
+}
+
+
+
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+
+
+.gradient-heading {
+  
+  
+  letter-spacing: 1px;
+  text-align: center;
+  background: -o-linear-gradient(45deg,#df6e12,#e6ebe4,#338a10);
+  background: linear-gradient(45deg,#df6e12,#e6ebe4,#338a10);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% 300%;
+  -webkit-animation: gradient-text 8s ease infinite;
+          animation: gradient-text 8s ease infinite;
+  
+}
+@-webkit-keyframes gradient-text {
+  0% {
+    background-position: 0% 50%;
+  }
+    50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient-text {
+  0% {
+    background-position: 0% 50%;
+  }
+    50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+</style>
+
+
+
+
 </head>
 
 <body>
@@ -37,28 +187,18 @@
   <header id="header">
     <div class="container-fluid">
 
-      <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto"><img src="img/magma-logo.png" alt="" title="" /></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
-        <!-- <a href="#intro" class="scrollto">Magma India</a></a>-->
-      </div>
+    
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Home</a></li>
           <li><a href="#about">About Us</a></li>
-          <li><a href="#service">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#call-to-action">Contribute</a></li>
+          <li><a href="#port">Portfolio</a></li>
+          <li><a href="#testimonials">Organizers</a></li>
+         
           <li><a href="#team">Team</a></li>
-          <li class="menu-has-children"><a href="">Community</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li>
+         
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -76,10 +216,23 @@
 
         <div class="carousel-inner" role="listbox">
 
-          <div class="carousel-item active" style="background-image: url('img/background.png');">
+          <div class="carousel-item container2 active" style="background-image: url('img/head3.jpg');">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>An Open Source Platform For Building Carrier-Grade Networks</h2>
+                <h2>
+                
+                
+                
+    <span class="title-word title-word-1">Magma</span>
+    <span class="title-word title-word-2">5G</span>
+    <span class="gradient-heading">INDIA</span>
+
+   
+  
+                
+                
+                
+                </h2>
                 <p>Magma connects the world to a faster network by providing operators an open, flexible, and extendable mobile core network solution. Its simplicity and lower cost structure empowers innovators to build mobile networks never previously imagined.</p>
                 <a href="#featured-services" class="btn-get-started scrollto">GET INVOLVED</a>
               </div>
@@ -151,22 +304,38 @@
       <div class="container">
         <div class="row">
 
+         
           <div class="col-lg-4 box">
-            <i class="ion-ios-bookmarks-outline"></i>
-            <h4 class="title"><a href=""></a></h4>
-            <p class="description"></p>
+            <span class="ion-ios-bookmarks-outline">
+&nbsp Open Source
+            </span>
+            
+           
           </div>
 
           <div class="col-lg-4 box box-bg">
-            <i class="ion-ios-stopwatch-outline"></i>
-            <h4 class="title"><a href=""></a></h4>
-            <p class="description"></p>
+            <span class="ion-ios-stopwatch-outline" > 
+              &nbsp 
+              <span class="waviy" style="color: #fcfdc0;">
+                <span style="--i:1">F</span>
+                <span style="--i:2">L</span>
+                <span style="--i:3">E</span>
+                <span style="--i:4">X</span>
+                <span style="--i:5">I</span>
+                <span style="--i:6">B</span>
+                <span style="--i:7">L</span>
+                <span style="--i:8">E</span>
+               
+              </span>
+
+
+            </span>
+       
           </div>
 
           <div class="col-lg-4 box">
-            <i class="ion-ios-heart-outline"></i>
-            <h4 class="title"><a href=""></a></h4>
-            <p class="description"></p>
+            <span class="ion-ios-heart-outline">&nbsp Extendable</span>
+        
           </div>
 
         </div>
@@ -285,7 +454,13 @@
     ============================-->
     <section id="call-to-action" class="wow fadeIn">
       <div class="container text-center">
-        <h3>Develop with Magma India</h3>
+        <h3>Develop with Magma <p class="text"></p> </h3> 
+        
+     
+        
+        
+        
+        
         <p> </p>
         <a class="cta-btn" href="#">START CONTRIBUTING</a>
       </div>
@@ -562,6 +737,7 @@
     <!--==========================
       Video Section
     ============================-->
+    <section id="port">
     <div class="video">
       <header class="section-header">
         <h4>Intro to Magma 5G core software modules for people wanting to certify under LF</h4>
@@ -576,6 +752,7 @@
         allowfullscreen
       ></iframe>
     </div>
+  </section>
 
     <!--==========================
       Clients/Sponsor Section
@@ -645,10 +822,26 @@
             <h4>Member</h4>
             <p>
               <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
-              
+              A Certified Kubernetes Administrator and currently doing research on Magma ( Open-source 4G/5G Telecom Core ) at University of Delhi as Reasearch Assistant.
+Also worked on another opensource project i.e Crossplane .
               <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
             </p>
           </div>
+       
+       
+
+          <div class="testimonial-item">
+            <img src="img/rohit.png" class="testimonial-img" alt="">
+            <h3>Rohit Arora</h3>
+            <h4>Member</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Work on end-to-end deployment and automation for all components of Magma 5G Orchestrator, Access Gateway and Federation Gateway.
+• Familiar with 4G and 5G simulators such as srsRAN and UERANSIM.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+       
         </div>
 
       </div>
@@ -719,6 +912,28 @@
               </div>
             </div>
           </div>
+
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="img/rohit.png" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Rohit Arora</h4>
+                  <span>Member</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
       </div>
     </section><!-- #team -->
 
@@ -802,7 +1017,7 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <h3><a href="#intro" class="scrollto"><img src="img/magma-logo.png" alt="" title="" /></a></h3>
+            <h3><a href="#intro" class="scrollto">MAGMA</h3>
             <p>Magma connects the world to a faster network by providing operators an open, flexible, and extendable mobile core network solution. Its simplicity and lower cost structure empowers innovators to build mobile networks never previously imagined.</p>
           </div>
 
@@ -877,8 +1092,32 @@
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
 
+  
+
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+
+
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+
+
+<script>
+
+$(function () {
+  $(".text").typed({
+    strings:["5G", "INDIA"],
+    typeSpeed: 70,
+    backSpeed: 20,
+    backDelay: 1500,
+    showCursor: true,
+    loop: true
+  });
+});
+
+
+</script>
+
 
 </body>
 </html>

@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
   width: 100%;
   height: 100vh;
-  background: #5602a4;
+  background: #000000;
 }
 
 #intro .carousel-item {
@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro .carousel-item::before {
   content: '';
-  background-color: #5602a4;
+
   position: absolute;
   height: 100%;
   width: 100%;
@@ -351,7 +351,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu li:hover > a, .nav-menu > .menu-active > a {
-  color: #5602a4;
+  color: #dba43e;
 }
 
 .nav-menu > li {
@@ -566,20 +566,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Featured Services Section
 --------------------------------*/
 #featured-services {
-  background: #000;
-}
+  background: rgb(28,66,74);
+  background: linear-gradient(90deg, rgba(28,66,74,1) 0%, rgba(18,18,57,1) 5%, rgba(20,20,64,1) 95%, rgba(28,66,74,1) 100%);
+} 
 
 #featured-services .box {
-  padding: 30px 20px;
+  padding: 40px 20px;
 }
 
 #featured-services .box-bg {
   background-image: linear-gradient(0deg, #000000 0%, #242323 50%, #000000 100%);
+  opacity:0.6;
 }
 
-#featured-services i {
+#featured-services span {
   color: #5602a4;
-  font-size: 48px;
+  font-size: 36px;
   display: inline-block;
   line-height: 1;
 }
